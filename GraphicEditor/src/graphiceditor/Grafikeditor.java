@@ -1,4 +1,5 @@
-package grafikeditor;
+package graphiceditor;
+
 
 public class Grafikeditor {
 
@@ -20,6 +21,8 @@ public class Grafikeditor {
         l.move(15, 15, 50, 15);
         */
 
+        // Aufgabe 3
+
         Linie l2 = new Linie(10, 20, 30, 40);
         l2.move(10, 10);
         Figur f2 = new Linie(10, 20, 30, 40);
@@ -28,5 +31,6 @@ public class Grafikeditor {
         display.hinzufuegen(l2);
         display.hinzufuegen(f2);
 
+        
     }
 }

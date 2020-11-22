@@ -1,4 +1,4 @@
-package grafikeditor;
+package graphiceditor;
 
 public class Figur {
     int x;
