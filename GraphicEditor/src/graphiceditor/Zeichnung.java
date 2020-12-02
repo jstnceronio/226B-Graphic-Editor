@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Zeichnung extends JFrame {
-    private List<Figur> figuren;
 
+    private List<Figur> figuren;
 
     /**
      * Zeichnungs Konstruktor

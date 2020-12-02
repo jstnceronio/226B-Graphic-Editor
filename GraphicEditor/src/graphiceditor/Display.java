@@ -19,8 +19,6 @@ import javax.swing.JPanel;
  */
 @SuppressWarnings("serial")
 public class Display extends JFrame {
-    // Die Liste der dargestellten Figur-Objekte
-    private List<Figur> figuren = new ArrayList<Figur>();
 
     // Referenz auf das Zeichnungs-Objekt
     private Zeichnung zeichnung;
@@ -62,15 +60,6 @@ public class Display extends JFrame {
                 zeichnung.zeichneFiguren(g);
             }
         });
-    }
-
-    /**
-     * Fügt eine weitere Figur hinzu und löst die Auffrischung des Fensterinhaltes aus.
-     * @param figur Referenz auf das weitere Figur-Objekt.
-     */
-    public void hinzufuegen(Figur figur) {
-        figuren.add(figur);
-        repaint();
     }
 }
 

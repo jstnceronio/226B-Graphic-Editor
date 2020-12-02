@@ -21,14 +21,15 @@ public class Grafikeditor {
         figuren.add(l);
         figuren.add(r);
         figuren.add(d);
+
         zeichnung = new Zeichnung(figuren);
         display.setZeichnung(zeichnung);
 
         l.move(100, 50);
         r.move(100, 50);
 
-        display.hinzufuegen(l);
-        display.hinzufuegen(r);
-        display.hinzufuegen(d);
+        zeichnung.hinzufuegen(l);
+        zeichnung.hinzufuegen(r);
+        zeichnung.hinzufuegen(d);
     }
 }
