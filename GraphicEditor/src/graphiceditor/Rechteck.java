@@ -1,6 +1,9 @@
 package graphiceditor;
 
+import java.awt.*;
+
 public class Rechteck extends Figur {
+
     private int breite;
     private int hoehe;
 
@@ -16,5 +19,10 @@ public class Rechteck extends Figur {
 
     public int getHoehe() {
         return hoehe;
+    }
+
+    @Override
+    public void zeichne(Graphics g) {
+        g.drawRect(x, y, breite, hoehe);
     }
 }

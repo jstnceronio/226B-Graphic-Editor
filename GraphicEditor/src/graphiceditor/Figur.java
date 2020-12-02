@@ -1,6 +1,9 @@
 package graphiceditor;
 
-public class Figur {
+import java.awt.*;
+
+public abstract class Figur {
+
     int x;
     int y;
 
@@ -18,7 +21,10 @@ public class Figur {
     }
 
     public void move(int deltaX, int deltaY) {
-        x = deltaX;
-        y = deltaY;
+        x += deltaX;
+        y += deltaY;
     }
+
+    public abstract void zeichne(Graphics g);
 }
+

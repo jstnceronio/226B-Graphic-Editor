@@ -1,6 +1,9 @@
 package graphiceditor;
 
+import java.awt.*;
+
 public class Linie extends Figur {
+
     private int endX;
     private int endY;
 
@@ -18,9 +21,15 @@ public class Linie extends Figur {
         return endY;
     }
 
-    public void move(int deltaX, int deltaY, int deltaEndX, int deltaEndY) {
-        super.move(deltaX, deltaY);
-        endX = deltaEndX;
-        endY = deltaEndY;
+    public void move(int deltaX, int deltaY) {
+        x += deltaX;
+        y += deltaY;
+        endX += deltaX;
+        endY += deltaY;
+    }
+
+    @Override
+    public void zeichne(Graphics g) {
+        g.drawLine(x, y, endX, endY);
     }
 }

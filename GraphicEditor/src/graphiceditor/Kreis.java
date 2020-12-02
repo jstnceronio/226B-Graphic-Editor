@@ -1,5 +1,7 @@
 package graphiceditor;
 
+import java.awt.*;
+
 public class Kreis extends Figur {
 
     int radius;
@@ -11,5 +13,10 @@ public class Kreis extends Figur {
 
     public int getRadius() {
         return radius;
+    }
+
+    @Override
+    public void zeichne(Graphics g) {
+        g.drawOval(x, y, radius, radius);
     }
 }
