@@ -2,7 +2,7 @@ package graphiceditor;
 
 import java.awt.*;
 
-public abstract class Figur {
+public abstract class Figur implements FigurInterface {
 
     int x;
     int y;

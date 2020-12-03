@@ -22,24 +22,8 @@ public class Zeichnung extends JFrame {
      * @param g Referenz auf das Graphics-Objekt zum zeichnen.
      */
     void zeichneFiguren(Graphics g) {
-
         for (Figur f : figuren) {
-            if (f instanceof Rechteck) {
-                Rechteck r = (Rechteck)f;
-                r.zeichne(g);
-            }
-            if (f instanceof Kreis) {
-                Kreis k = (Kreis)f;
-                k.zeichne(g);
-            }
-            if (f instanceof Linie) {
-                Linie l = (Linie)f;
-                l.zeichne(g);
-            }
-            if (f instanceof Dreieck) {
-                Dreieck d = (Dreieck)f;
-                d.zeichne(g);
-            }
+            f.zeichne(g);
         }
     }
 
