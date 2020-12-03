@@ -1,8 +1,8 @@
-package graphiceditor;
+package graphiceditor.Model;
 
 import java.awt.*;
 
-public abstract class Figur implements FigurInterface {
+public abstract class Figur {
 
     int x;
     int y;

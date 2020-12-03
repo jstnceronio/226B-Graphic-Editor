@@ -1,4 +1,6 @@
-package graphiceditor;
+package graphiceditor.Model;
+
+import graphiceditor.Model.Figur;
 
 import java.awt.*;
 

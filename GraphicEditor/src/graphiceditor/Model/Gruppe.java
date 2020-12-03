@@ -1,9 +1,8 @@
-package graphiceditor;
+package graphiceditor.Model;
+
+import graphiceditor.Model.Figur;
 
 import java.awt.*;
-import java.util.ArrayList;
-import java.util.List;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,10 +21,11 @@ public class Gruppe extends Figur {
     public void delete(Figur f) {
         figuren.remove(f);
     }
+
     @Override
     public void move(int deltaX, int deltaY) {
-        for(Figur figur: figuren) {
-            figur.move(deltaX, deltaY);
+        for(Figur f: figuren) {
+            f.move(deltaX, deltaY);
         }
     }
 

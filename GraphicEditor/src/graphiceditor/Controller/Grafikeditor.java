@@ -1,5 +1,11 @@
-package graphiceditor;
+package graphiceditor.Controller;
 
+
+import graphiceditor.Model.Figur;
+import graphiceditor.View.Display;
+import graphiceditor.Model.Gruppe;
+import graphiceditor.Model.Spitzbueb;
+import graphiceditor.View.Zeichnung;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,23 +19,17 @@ public class Grafikeditor {
 
     public static void main(String [] args) {
 
-        Kreis k = new Kreis(300, 50, 300);
-        Linie l2 = new Linie(10, 20, 50, 100);
+        // Figuren (Kreis + Kreuz)
+        Spitzbueb s = new Spitzbueb(300, 50, 300, 50, 150);
 
-        gruppe.add(k);
-        gruppe.add(l2);
-        Rechteck r = new Rechteck(100, 100, 50, 50);
+        // Gruppe füllen
+        gruppe.add(s);
 
-        // figuren.add(k);
-        figuren.add(r);
-        // figuren.add(k);
+        // Gruppe zu Figuren hinzufügen
         figuren.add(gruppe);
-
-        // figuren.add(d);
-
         zeichnung = new Zeichnung(figuren);
+
         display.setZeichnung(zeichnung);
         zeichnung.hinzufuegen(gruppe);
-        // zeichnung.hinzufuegen(d);
     }
 }

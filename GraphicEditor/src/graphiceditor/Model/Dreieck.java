@@ -1,4 +1,4 @@
-package graphiceditor;
+package graphiceditor.Model;
 
 import java.awt.*;
 
