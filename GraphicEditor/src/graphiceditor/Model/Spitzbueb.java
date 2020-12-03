@@ -5,15 +5,9 @@ import java.awt.*;
 public class Spitzbueb extends Figur {
 
     private Gruppe gr = new Gruppe(0, 0);
-    private int radius;
-    private int hoehe;
-    private int breite;
 
     public Spitzbueb(int x, int y, int radius, int hoehe, int breite) {
         super(x, y);
-        this.radius = radius;
-        this.hoehe = hoehe;
-        this.breite = breite;
 
         Kreis k = new Kreis(x, y, radius);
         Rechteck r = new Rechteck(x + 125, y + 70, hoehe, breite);
