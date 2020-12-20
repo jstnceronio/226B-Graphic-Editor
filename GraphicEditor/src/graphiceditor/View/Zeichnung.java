@@ -18,11 +18,12 @@ public class Zeichnung extends JFrame {
         this.figuren = figuren;
     }
 
+
     /**
      * Delegiert Zeichnen an Figur selber
      * @param g Referenz auf das Graphics-Objekt zum zeichnen.
      */
-    void zeichneFiguren(Graphics g) {
+    public void zeichneFiguren(Graphics g) {
         for (Figur f : figuren) {
             f.zeichne(g);
         }

@@ -1,7 +1,5 @@
 package graphiceditor.Model;
 
-import graphiceditor.Model.Figur;
-
 import java.awt.*;
 
 public class Rechteck extends Figur {
