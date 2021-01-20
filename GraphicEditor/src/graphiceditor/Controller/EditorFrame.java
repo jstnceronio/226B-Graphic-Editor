@@ -9,7 +9,7 @@ import javax.swing.*;
 final class EditorFrame extends JFrame implements KeyListener, ActionListener {
 
   private EditorControl editorControl = new EditorControl();
-  
+
   public EditorFrame(int breite, int hoehe) {
     super("Grafikeditor");
     erzeugeUndSetzeEditorPanel();
@@ -74,7 +74,6 @@ final class EditorFrame extends JFrame implements KeyListener, ActionListener {
   }
 
   private void buildToolbar() {
-
     // Create new ToolBar
     JToolBar bar = new JToolBar();
     bar.setSize(500, 300);
