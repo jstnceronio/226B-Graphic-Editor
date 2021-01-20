@@ -52,4 +52,8 @@ final class EditorControl {
     }
     zeichnung.hinzufuegen(figur);
   }
+
+  public char getFigurTyp() {
+    return figurTyp;
+  }
 }

@@ -38,18 +38,15 @@ final class EditorPanel extends JPanel implements MouseListener {
 
   @Override
   public void mouseReleased(MouseEvent e) {
-    System.out.println("Mouse Released!");
     editorControl.erzeugeFigurMitZweitemPunkt(e.getPoint());
     repaint();
   }
 
   @Override
   public void mouseEntered(MouseEvent e) {
-    System.out.println("Mouse entered!");
   }
 
   @Override
   public void mouseExited(MouseEvent e) {
-    System.out.println("Mouse exited!");
   }
 }
