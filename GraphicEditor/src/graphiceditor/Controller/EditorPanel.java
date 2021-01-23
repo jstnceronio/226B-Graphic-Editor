@@ -3,14 +3,15 @@ package graphiceditor.Controller;
 import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.awt.event.MouseMotionListener;
 
 import javax.swing.JPanel;
 
 @SuppressWarnings("serial")
 final class EditorPanel extends JPanel implements MouseListener {
 
-  private Point mousePosition;
   private EditorControl editorControl;
+  private EditorFrame editorFrame;
 
   EditorPanel(EditorControl control) {
     editorControl = control;
@@ -26,13 +27,10 @@ final class EditorPanel extends JPanel implements MouseListener {
   }
 
   @Override
-  public void mouseClicked(MouseEvent e) {
-
-  }
+  public void mouseClicked(MouseEvent e) { }
 
   @Override
   public void mousePressed(MouseEvent e) {
-    System.out.println("Mouse Pressed!");
     editorControl.setErsterPunkt(e.getPoint());
   }
 
@@ -43,10 +41,8 @@ final class EditorPanel extends JPanel implements MouseListener {
   }
 
   @Override
-  public void mouseEntered(MouseEvent e) {
-  }
+  public void mouseEntered(MouseEvent e) { }
 
   @Override
-  public void mouseExited(MouseEvent e) {
-  }
+  public void mouseExited(MouseEvent e) { }
 }

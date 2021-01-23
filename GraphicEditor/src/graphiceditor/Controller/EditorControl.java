@@ -8,6 +8,7 @@ import graphiceditor.View.Zeichnung;
 
 import java.awt.Graphics;
 import java.awt.Point;
+import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 
 
@@ -23,6 +24,9 @@ final class EditorControl {
 
   public void setFigurTyp(char figurTyp) {
     this.figurTyp = figurTyp;
+  }
+  public char getFigurTyp() {
+    return figurTyp;
   }
 
   public void setErsterPunkt(Point ersterPunkt) {
@@ -53,7 +57,7 @@ final class EditorControl {
     zeichnung.hinzufuegen(figur);
   }
 
-  public char getFigurTyp() {
-    return figurTyp;
+  public void rubberband(MouseEvent e) {
+    // aaaa
   }
 }
